@@ -30,9 +30,23 @@ h5, h6 {
 }
 
 .menu li a {
-    font-size: 1.2rem;
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+    color:#075b0f
 }
 
 .feature h3 {
+    border-bottom: #c7b9b9 1px solid;
+}
+
+.logo p {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-size: 1.1rem;
     border-bottom: #c7b9b9 1px solid;
 }

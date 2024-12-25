@@ -1,37 +1,126 @@
 <!DOCTYPE html>
-<html lang="zh-tw">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>綠崗麵包坊</title>
-    <link rel="stylesheet" href="style.css">
+    <title>GreenHill|關於綠崗</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="uikit.css"
 </head>
 <body>
-    <header>
-        <H1> <a href="index.html">GreenHill Backery</a></H1>
-        <h2>綠崗麵包坊</h2>
-        <nav>
-        <ul>
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="products.html">產品</a></li>
-            <li><a href="about.html">綠崗麵包坊</a></li>
-            <li><a href="contact.html">營業資訊</a></li>
-        </ul>
-        </nav>
-        </header>
-        <main>
-    <H2>寧靜巷弄中的驚喜</H2>
-    <blockquote>"可以品味生活的美好，也可以享受片刻的平靜。"</blockquote>
-    <img src="images/bakeryshop.webp" alt="">
-    <p>
-        我們的工坊隱身於建國科技大學附近的寧靜巷弄，為忙碌的人們提供一個休憩的港灣。我們相信食物是幸福的來源，並致力於手工製作健康美味的雜糧麵包，以及以匠心精神打造的香醇手沖咖啡。每一口麵包，每一杯咖啡，都充滿我們對品質與細節的執著，讓您在享受美食的同時，也補充一天所需的能量。
-    </p>
-    <p>
-        我們相信，身心的放鬆和食物的健康同樣重要。每款麵包都是經過用心挑選的天然食材製作，不添加多餘的人工成分。我們的手沖咖啡則選用優質咖啡豆，透過慢工細活的沖泡工藝，讓每杯咖啡的香氣與口感達到完美平衡。
-    </p>
-</main>
-<footer> 
-    <p>Copyright &copy; 2024 綠崗烘焙坊 All Rights Reserved</p>
-</footer>
+    <!--頁首-->
+    <header class="uk-background-muted uk-padding-small">
+        <div class="uk-container uk-flex uk-flex-middle uk-flex-between">
+            <!-- Logo 和網站名稱 -->
+            <div class="uk-flex uk-flex-middle">
+                <a href="index.html"><img src="photo/logo1.png" alt="網站 Logo" class="uk-margin-small-right uk-border-circle" width="90" height="90"></a>
+                <div class="logo">
+                    <h1 class="uk-margin-remove uk-text-bold uk-text-primary">綠崗麵包工坊</h1>
+                    <p class="uk-margin-remove uk-text-meta">GreenHill Bakery</p>
+                </div>
+            </div>
+            <!-- RWD 選單 -->
+            <nav class="uk-navbar-container" uk-navbar>
+                <!-- 漢堡選單（行動版） -->
+                <div class="uk-hidden@m">
+                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">
+                        <span uk-navbar-toggle-icon></span>
+                    </button>
+                    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar">
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            <ul class="uk-nav uk-nav-default">
+                                <li><a href="index.html">首頁</a></li>
+                                <li><a href="about.html">關於我們</a></li>
+                                <li><a href="product.html">產品列表</a></li>
+                                <li><a href="contact.html">聯絡我們</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 電腦版選單 -->
+                <ul class="menu uk-navbar-nav uk-visible@m">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="product.html">產品列表</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--主內容 main-->
+    <!--人氣精選-->
+    <section class="uk-section uk-section-default">
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>在溫馨綠意中品味手作美味</span></h2>
+            <div class="uk-grid uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                <div>
+                    <img src="photo/mystore1.jpg" alt="店面照片" class="uk-width-1-1">
+                </div>
+                <div class="product">
+                    <h3>結合自然氛圍與地方風味的幸福早晨</h3>
+
+                    <p>
+                        踏進綠崗早午餐 (GreenHill Brunch)，迎面而來的是滿滿的自然氣息與溫暖氛圍。店內以柔和的綠色牆面、木質家具與綠意盎然的植物點綴，彷彿讓人從城市的繁忙中抽離，來到一處可以放慢腳步的避風港。
+                    </p>
+                    <p>
+                        綠崗最大的特色，除了清新舒適的用餐環境，還在於其堅持使用高品質的本地食材，為每一道餐點注入地方特色。餐點中特別使用了新竹名產福源花生醬，這款醬料以濃郁香醇的風味著稱，為每一款三明治與吐司增添一抹甜香，令人回味無窮。不論是多汁的雞腿排蛋三明治，還是豐富飽滿的總匯三明治，每一口都帶著幸福的味道。
+                    </p>
+                    <p>
+                        店內的三明治與碳烤吐司系列，不僅食材講究，還特別注重肉品來源，所有豬肉均選用台灣國產，鮮嫩多汁，品質安心。而美式風格的海鹽牛五花與泡菜牛五花，則帶來不同於傳統早午餐的創新口感，滿足味蕾的多重需求。
+                    </p>
+                    <p>
+                        綠崗早午餐不僅是一家餐廳，更是一個將地方文化與美味結合的場所。來到這裡，用一份充滿新竹福源花生醬香氣的餐點，搭配一杯咖啡，享受屬於自己的悠閒時光吧！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 頁尾區段 -->
+    <footer class="uk-section uk-section-secondary uk-light">
+        <div class="uk-container">
+            <div class="uk-grid-match uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+                <!-- 第一欄：網站資訊 -->
+                <div>
+                    <h4 class="uk-text-bold">關於我們</h4>
+                    <p>迅速的餐點製作與送餐效率，讓您可以更悠閒地享受碳烤的美味。</p>
+                </div>
+                <!-- 第二欄：聯絡方式 -->
+                <div>
+                    <h4 class="uk-text-bold">聯絡方式</h4>
+                    <ul class="uk-list">
+                        <li>地址：彰化市介壽北1號</li>
+                        <li>電話：04-7111111</li>
+                        <li>Email：greenhill@gmail.com</li>
+                    </ul>
+                </div>
+                <!-- 第三欄：快速連結 -->
+                <div>
+                    <h4 class="uk-text-bold">快速連結</h4>
+                    <ul class="uk-list">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="product.html">產品列表</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <!-- 第四欄：社群媒體 -->
+                <div>
+                    <h4 class="uk-text-bold">追蹤我們</h4>
+                    <div class="uk-flex uk-flex-middle">
+                        <a href="https://www.facebook.com/profile.php?id=100000206846905&locale=zh_TW" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                        <a href="https://x.com/wimsckit" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                        <a href="https://www.instagram.com/wimsckit/" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                        <a href="https://www.youtube.com/@wimsckit" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>    
 </body>
 </html>
