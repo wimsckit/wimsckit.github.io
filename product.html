@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="uikit.css"
+</head>
+<body>
+    <!--頁首-->
+    <header class="uk-background-muted uk-padding-small">
+        <div class="uk-container uk-flex uk-flex-middle uk-flex-between">
+            <!-- Logo 和網站名稱 -->
+            <div class="uk-flex uk-flex-middle">
+                <img src="photo/logo1.png" alt="網站 Logo" class="uk-margin-small-right uk-border-circle" width="90" height="90">
+                <div>
+                    <h1 class="uk-margin-remove uk-text-bold uk-text-primary">綠崗麵包工坊</h1>
+                    <p class="uk-margin-remove uk-text-meta">GreenHill Bakery</p>
+                </div>
+            </div>
+            <!-- RWD 選單 -->
+            <nav class="uk-navbar-container" uk-navbar>
+                <!-- 漢堡選單（行動版） -->
+                <div class="uk-hidden@m">
+                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">
+                        <span uk-navbar-toggle-icon></span>
+                    </button>
+                    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar">
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            <ul class="uk-nav uk-nav-default">
+                                <li><a href="index.html">首頁</a></li>
+                                <li><a href="#">關於我們</a></li>
+                                <li><a href="#">產品列表</a></li>
+                                <li><a href="#">聯絡我們</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 電腦版選單 -->
+                <ul class="menu uk-navbar-nav uk-visible@m">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">產品列表</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--主內容 main-->
+
+    <section class="product uk-container uk-section uk-section-muted">
+        <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="photo/banner3.jpg" uk-img="loading: eager">
+            <h1>人氣精選 Popular Items</h1>
+        </div>
+        <div class="uk-child-width-1-2@s uk-child-width-2-5@m uk-child-width-1-4@l" uk-grid>
+
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                        <h3>雞腿排蛋三明治 </h3>
+                        <p>綿密吐司夾著鮮嫩多汁的雞腿排，搭配美生菜、牛番茄、黃瓜與滑順的起司，層層堆疊出豐富的口感。特製的福源花生醬帶來微甜香濃的風味，完美平衡鹹味與鮮味，讓每一口都回味無窮。再加上營養滿分的煎蛋與沙拉，這款三明治無論是當早餐還是輕食都非常合適，給你一天滿滿的活力！</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img src="photo/chicken-thigh-chop-and-egg-toasted-sandwich.jpg" width="90%" height="90%" alt="" class="uk-border-rounded">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                        <h3>豬排蛋三明治</h3>
+                        <p>以軟嫩多汁的國產豬排為主角，這款三明治融合了美生菜、牛番茄、黃瓜與香濃起司，增添了豐富的蔬菜鮮味。搭配彰化福源花生醬，散發出淡淡的花生香氣，甜鹹交織令人食指大動。吐司經過精心烘烤，外酥內軟，夾著煎蛋與沙拉，更加完整了這道經典的美味！</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img src="photo/pork-chop-and-egg-toasted-sandwich.jpg" width="90%" height="90%" alt="" class="uk-border-rounded">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                        <h3>香腸蛋三明治</h3>
+                        <p>豐厚的國產香腸以香氣十足的烘烤方式處理，搭配生脆的美生菜、番茄和黃瓜，層層滋味相互呼應。再加入滑順的起司、濃郁的福源花生醬，以及一顆金黃煎蛋，讓整體口感更加豐富。香腸的鹹香與蔬菜的清爽完美融合，無論是單人早餐或是悠閒午餐，都讓人充滿滿足感。</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img src="photo/sausage-and-egg-sandwich.jpg" width="90%" height="90%" alt="" class="uk-border-rounded">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                        <h3>海鹽牛五花三明治</h3>
+                        <p>特選來自美國的牛五花肉，以海鹽調味提升牛肉本身的風味，再與美生菜、牛番茄、黃瓜和起司搭配，打造出層次豐富的口感。福源花生醬為整體增添一抹溫潤的甜香，讓鹹香的牛五花與蔬菜的清爽達到絕妙平衡。這是一款不容錯過的經典早午餐選擇，滿足肉類愛好者的味蕾！</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img src="photo/sea-salt-beef-flake-sandwich.jpg" width="90%" height="90%" alt="" class="uk-border-rounded">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                        <h3>總匯三明治</h3>
+                        <p>四片酥脆吐司層層堆疊，夾著豐富的國產豬排、大火腿、培根，再融合美生菜、番茄、黃瓜與滑順起司，提供最豪華的口感享受。福源花生醬帶來微甜的香氣，搭配煎蛋與沙拉，讓這道總匯三明治每一口都充滿驚喜與滿足，是聚會、共享餐點的不二選擇！</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img src="photo/club-sandwich.jpg" width="90%" height="90%" alt="" class="uk-border-rounded">
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- 頁尾區段 -->
+    <footer class="uk-section uk-section-secondary uk-light">
+        <div class="uk-container">
+            <div class="uk-grid-match uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+                <!-- 第一欄：網站資訊 -->
+                <div>
+                    <h4 class="uk-text-bold">關於我們</h4>
+                    <p>綠崗麵包工坊秉持在地新鮮的理念，用心製作每一份麵包。</p>
+                </div>
+                <!-- 第二欄：聯絡方式 -->
+                <div>
+                    <h4 class="uk-text-bold">聯絡方式</h4>
+                    <ul class="uk-list">
+                        <li>地址：彰化縣綠崗路88號</li>
+                        <li>電話：04-12345678</li>
+                        <li>Email：info@greenhillbakery.tw</li>
+                    </ul>
+                </div>
+                <!-- 第三欄：快速連結 -->
+                <div>
+                    <h4 class="uk-text-bold">快速連結</h4>
+                    <ul class="uk-list">
+                        <li><a href="#">首頁</a></li>
+                        <li><a href="#">關於我們</a></li>
+                        <li><a href="#">產品列表</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <!-- 第四欄：社群媒體 -->
+                <div>
+                    <h4 class="uk-text-bold">追蹤我們</h4>
+                    <div class="uk-flex uk-flex-middle">
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
